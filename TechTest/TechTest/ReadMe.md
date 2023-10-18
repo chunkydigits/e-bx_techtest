@@ -12,7 +12,7 @@ Acceptance criteria:
 	When requesting GET /api/v1/{owner}/{repo}/contributors
 	Then return HTTP 404 Not Found
 
-========================
+
 Questions and Mitigation
 ========================
 - Says in the description 100 but then the acceptance criteria that it's 30
@@ -20,13 +20,13 @@ Questions and Mitigation
 	- Could added an optional item to specify an amount that defaults to one of the specified numbers
 - Testing
 	- The BDD syntax lends to some cucumber tests (not done this in a while) but i thought it would be better spent doing the part that we were looking for i.e. the Mediatr and code structure
-
+- For testing purposes I simply returned the whole object from the GitHub API since my repositories were fairly limitted in their contributions. 
 
 
 
 A question I have after using this ... 
 - Repositories 
 	- do we need them if we are doing Mediation as we are almost doing the same thing with both patterns. 
-	- The decoupling is done instead by Mediatr but i could see why we would use another layer, but seems unneccesary. 
+	- The decoupling is done instead by Mediatr but I could see why we would use another layer, but seems unneccesary. 
 
 

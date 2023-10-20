@@ -7,7 +7,7 @@ namespace TechTest.Handlers
 {
     public class GetContributorsHandler : IRequestHandler<GetContributorsQuery, IEnumerable<Commit>?>
     {
-        private const int ConfiguredResultAmount = 30;
+        private const int ConfiguredResultAmount = 100;
         private readonly IHttpClientFactory _httpClientFactory;
 
         public GetContributorsHandler(IHttpClientFactory httpClientFactory)
